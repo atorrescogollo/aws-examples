@@ -19,7 +19,7 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents  = <<-EOF
     terraform {
-        required_version = ">= 0.12"
+        required_version = ">= 1"
         backend "s3" {}
     }
     provider "aws" {
