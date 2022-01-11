@@ -1,5 +1,5 @@
 locals {
-  env = read_terragrunt_config("env.hcl").locals.env
+  env    = read_terragrunt_config("env.hcl").locals.env
   config = yamldecode(file(find_in_parent_folders("config.yaml")))
 }
 
